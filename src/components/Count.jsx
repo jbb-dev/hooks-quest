@@ -5,7 +5,7 @@ const Count = () => {
     const [count, setCount] = useState(0)
    
     const setValue = (value) => {
-        setCount(value)
+        setCount(Number(value))
     }
 
     const increment = () => {
@@ -22,8 +22,8 @@ const Count = () => {
         <h1>Quelle est la valeur de départ ?</h1>
         <input type='number' onChange={(e) => setValue(e.target.value)}></input>
         <h2>{count}</h2>
-        <button onClick={() => decrement()}> -1 </button>
-        <button onClick={() => increment()}> +1 </button>
+        <button value="Decrement Value" onClick={() => decrement()}> -1 </button>
+        <button value="Increment Value" onClick={() => increment()}> +1 </button>
 
 
 
