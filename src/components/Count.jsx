@@ -20,7 +20,7 @@ const Count = () => {
         <>
 
         <h1>Quelle est la valeur de départ ?</h1>
-        <input onChange={(e) => setValue(e.target.value)}></input>
+        <input type='number' onChange={(e) => setValue(e.target.value)}></input>
         <h2>{count}</h2>
         <button onClick={() => decrement()}> -1 </button>
         <button onClick={() => increment()}> +1 </button>
